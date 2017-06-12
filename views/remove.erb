@@ -1,0 +1,13 @@
+<h2>Select a recipe to remove</h2>
+
+<ol>
+	<% @recipes.each do |recipe| %>
+		<li><%= recipe.name %> <%= recipe.description %> </li>
+	<% end %>
+</ol>
+
+
+<form action="/remove" method="post">
+  <label for="index">Number:</label>
+  <input id="index" type="number" name="index">
+  </form>

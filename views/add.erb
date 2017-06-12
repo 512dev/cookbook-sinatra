@@ -1,0 +1,35 @@
+<h2>Add a Recipe</h2>
+<!-- <form action="">
+  <div class="form-group">
+    <label for="name">Recipe Name:</label>
+    <input type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="description" class="form-control" id="description">
+  </div>
+  <div class="form-group">
+    <label for="time">Time to Cook in min:</label>
+    <input type="value" class="form-control" id="time">
+  </div>
+  <div>
+  	<label class="radio-inline"><input type="radio" name="dif1" value = 1>Very Easy</label>
+    <label class="radio-inline"><input type="radio" name="dif2" value = 2>Easy</label>
+    <label class="radio-inline"><input type="radio" name="dif3" value = 3>Medium</label>
+    <label class="radio-inline"><input type="radio" name="dif4" value = 4>Challenging</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+ -->
+
+<form action="/recipes" method="post">
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="name">
+  <label for="description">Desription:</label>
+  <input id="description" type="text" name="description">
+  <label for="time">time:</label>
+  <input id="time" type="text" name="time">
+  <label for="challenge">challenge:</label>
+  <input id="challenge" type="text" name="challenge">
+  <input type="submit" value="Save">
+</form>

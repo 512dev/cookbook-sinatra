@@ -1,0 +1,14 @@
+<h2>These are your recipies:</h2>
+
+<ol>
+	<% @recipes.each do |recipe| %>
+		<li><%= recipe.name %> <%= recipe.description %> </li>
+	<% end %>
+</ol>
+
+<ul>
+	<li><a href="/add_recipe"> Add Recipe</a></li>
+	<li><a href="/remove_recipe">Remove Recipe</a></li>
+	<li><a href="/search">Find a new recipe from LetsCookFrench</a></li>
+</ul>
+
